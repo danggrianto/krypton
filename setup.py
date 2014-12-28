@@ -4,7 +4,7 @@ setup(
     name='krypton',
     version='0.1.2',
     url='https://bitbucket.org/danggrianto/krypton',
-    license='BSD',
+    license='GNU GPL v2.0',
     author='Daniel Anggrianto',
     author_email='danggrianto@50onred.com',
     description='Automation Framework using Selenium',
