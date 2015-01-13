@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='kryptonium',
-    version='0.1.2',
+    version='0.1.3',
     url='https://github.com/danggrianto/kryptonium',
     license='GNU GPL v2.0',
     author='Daniel Anggrianto',
