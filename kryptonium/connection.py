@@ -1,12 +1,12 @@
 from time import sleep
 from urlparse import urljoin
 
-from krypton.utils import get_config, get_application_settings
+from utils import get_config, get_application_settings
 from selenium.common.exceptions import WebDriverException
 
 
 if get_config()['selenium']['remote']:  # pragma: no cover
-    from krypton.driver import CustomDriver
+    from driver import CustomDriver
 else:
     from selenium.webdriver import Firefox as CustomDriver
 

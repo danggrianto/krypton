@@ -1,7 +1,7 @@
 from datetime import timedelta
 from time import sleep
 
-from krypton.connection import CONFIG
+from connection import CONFIG
 
 
 class BasePage(object):

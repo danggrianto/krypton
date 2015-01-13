@@ -1,12 +1,12 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='krypton',
+    name='kryptonium',
     version='0.1.2',
-    url='https://bitbucket.org/danggrianto/krypton',
+    url='https://github.com/danggrianto/kryptonium',
     license='GNU GPL v2.0',
     author='Daniel Anggrianto',
-    author_email='danggrianto@50onred.com',
+    author_email='daniel@anggrianto.com',
     description='Automation Framework using Selenium',
     long_description=__doc__,
     packages=find_packages(),
