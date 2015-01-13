@@ -1,6 +1,10 @@
 from datetime import timedelta
 from time import sleep
 
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 from connection import CONFIG
 
 
@@ -31,3 +35,9 @@ class BasePage(object):
                 sleep(SLEEP_INTERVAL)
                 elapsed_time = elapsed_time - interval
         raise AssertionError
+
+    def explicit_wait(self, locator, seconds=10):
+        """Explicitly wait for an element to show up"""
+        WebDriverWait(self.browser, seconds).until(
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, locator)))
