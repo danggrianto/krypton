@@ -1,4 +1,4 @@
-MODULE = krypton
+MODULE = kryptonium
 
 PYTHON_VERSION = python2.7
 
@@ -18,11 +18,7 @@ VIRTUALENV = virtualenv
 VIRTUALENVOPTS = --python=$(PYTHON_VERSION)
 
 ## Testing ##
-.PHONY: test coverage
-
-test:
-	@echo Running tests
-	$(DEVELOPMENT_ENV) $(NOSE) --cover-package=$(MODULE),tests --tests=tests/ --with-coverage
+.PHONY: coverage
 
 $(REPORTDIR):
 	test -d "$@" || mkdir -p "$@"
